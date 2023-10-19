@@ -11,13 +11,13 @@ The usual Toast, but with steroids.
 
 ## Prerequisites
 
-Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
+Add this in your root `settings.gradle.kts` file:
 
 ```gradle
 allprojects {
 	repositories {
 		...
-		maven { url "https://jitpack.io" }
+		maven { url = uri("https://jitpack.io")}
 	}
 }
 ```
